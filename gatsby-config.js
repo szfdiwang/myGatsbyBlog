@@ -1,11 +1,11 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
-    author: `Kyle Mathews`,
+    title: `通往奴役之路`,
+    author: `sulivan CC`,
     description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+    siteUrl: `https://user.qzone.qq.com/1726021`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `1726021`,
     },
   },
   plugins: [
