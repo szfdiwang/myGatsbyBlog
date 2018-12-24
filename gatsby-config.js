@@ -1,9 +1,10 @@
 module.exports = {
   siteMetadata: {
     title: `通往奴役之路`,
-    author: `sulivan CC`,
+    author: `Sulivan CC`,
     description: `A starter blog demonstrating what Gatsby can do.`,
     siteUrl: `https://user.qzone.qq.com/1726021`,
+    address:`ShznZhen NanShan XueFu Rd.`,
     social: {
       twitter: `1726021`,
     },
@@ -63,7 +64,7 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `content/assets/gatsby-icon.png`,
+        icon: `content/assets/saosao.png`,
       },
     },
     `gatsby-plugin-offline`,

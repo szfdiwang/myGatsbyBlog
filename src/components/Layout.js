@@ -64,6 +64,7 @@ class Layout extends React.Component {
         {header}
         {children}
       </div>
+      
     )
   }
 }

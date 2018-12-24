@@ -9,14 +9,16 @@ function Bio() {
     <StaticQuery
       query={bioQuery}
       render={data => {
-        const { author, social } = data.site.siteMetadata
+        const { author, social,address } = data.site.siteMetadata
         return (
           <div
             style={{
               display: `flex`,
               marginBottom: rhythm(2.5),
+              fontSize:12
             }}
           >
+            {/* icon小图片部分 */}
             <Image
               fixed={data.avatar.childImageSharp.fixed}
               alt={author}
@@ -25,14 +27,14 @@ function Bio() {
                 marginBottom: 0,
                 minWidth: 50,
                 borderRadius: `100%`,
+                border:`1px solid #a9a9a9`
               }}
             />
             <p>
-              Written by <strong>{author}</strong> who lives and works in ShenZhen.
-              {social.QQ}
-              <a href={`https://user.qzone.qq.com/${social.twitter}`}>
-                You should follow him on QQ space
-              </a>
+              Written by <strong>{author}</strong><br></br>
+              {/* who lives and works in ShenZhen. */}
+              Address&nbsp;:&nbsp;{address}<br></br>
+              QQ&nbsp;:&nbsp;{social.twitter}<br></br>
             </p>
           </div>
         )
@@ -53,9 +55,10 @@ const bioQuery = graphql`
     site {
       siteMetadata {
         author
+        address
         social {
           twitter
-        }
+        } 
       }
     }
   }
