@@ -1,10 +1,12 @@
 import React from 'react'
 import { Link, graphql } from 'gatsby'
 
-import Bio from '../components/bio'
-import Layout from '../components/layout'
-import SEO from '../components/seo'
+import Bio from '../components/Bio'  // 个人标签
+import Layout from '../components/layout' // 整体框架
+import SEO from '../components/seo' // seo未知
 import { rhythm } from '../utils/typography'
+import '../assets/css/index.css'
+
 
 class BlogIndex extends React.Component {
   render() {
@@ -13,6 +15,7 @@ class BlogIndex extends React.Component {
     const posts = data.allMarkdownRemark.edges
 
     return (
+      
       <Layout location={this.props.location} title={siteTitle}>
         <SEO
           title="王陈晨的Blog"
@@ -37,7 +40,6 @@ class BlogIndex extends React.Component {
             </div>
           )
         })}
-        <Bio />
       </Layout>
     )
   }

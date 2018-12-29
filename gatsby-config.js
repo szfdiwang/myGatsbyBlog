@@ -4,12 +4,14 @@ module.exports = {
     author: `Sulivan CC`,
     description: `A starter blog demonstrating what Gatsby can do.`,
     siteUrl: `https://user.qzone.qq.com/1726021`,
-    address:`ShznZhen NanShan XueFu Rd.`,
+    address: `ShznZhen NanShan XueFu Rd.`,
     social: {
       twitter: `1726021`,
     },
   },
   plugins: [
+    // `gatsby-plugin-sass`,
+    // `gatsby-plugin-purify-css`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -27,8 +29,7 @@ module.exports = {
     {
       resolve: `gatsby-transformer-remark`,
       options: {
-        plugins: [
-          {
+        plugins: [{
             resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 590,

@@ -11,10 +11,11 @@ function Bio() {
       render={data => {
         const { author, social,address } = data.site.siteMetadata
         return (
-          <div
+          <div className="Foot_Box_logo"
             style={{
               display: `flex`,
-              marginBottom: rhythm(2.5),
+              // marginBottom: rhythm(2.5),
+              // marginTop: rhythm(.2),
               fontSize:12
             }}
           >
